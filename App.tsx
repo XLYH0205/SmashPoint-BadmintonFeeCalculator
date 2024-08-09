@@ -10,6 +10,9 @@ import PasteParticipants from './components/PasteParticipants';
 import AddShuttlecock from './components/AddShuttlecock';
 import AddOtherFee from './components/AddOtherFee';
 import EditParticipant from './components/EditParticipant';
+import Hours from './components/Hours';
+import AddHour from './components/AddHour';
+import Result from './components/Result';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,12 +23,13 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} options={{headerShown:false}}/>
         <Stack.Screen name="Participants" component={Participants} options={{headerShown:false}}/>
         <Stack.Screen name="AddParticipant" component={AddParticipant} options={{headerShown:false}}/>
-
         <Stack.Screen name="EditParticipant" component={EditParticipant} options={{headerShown:false}}/>
-
         <Stack.Screen name="PasteParticipants" component={PasteParticipants} options={{headerShown:false}}/>
         <Stack.Screen name="AddShuttlecock" component={AddShuttlecock} options={{headerShown:false}}/>
         <Stack.Screen name="AddOtherFee" component={AddOtherFee} options={{headerShown:false}}/>
+        <Stack.Screen name="Hours" component={Hours} options={{headerShown:false}}/>
+        <Stack.Screen name="AddHour" component={AddHour} options={{headerShown:false}}/>
+        {/* <Stack.Screen name="Result" component={Result} options={{headerShown:false}}/> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

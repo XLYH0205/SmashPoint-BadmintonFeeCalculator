@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, TouchableWithoutFeedback, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, FlatList, TouchableOpacity, Alert } from 'react-native';
 import Header from '../components/Header';
 import colors from '../assets/colors/colors';
 
@@ -9,7 +9,6 @@ import BottomButton from './BottomButton';
 
 export default Participants = ({ navigation, route }) => {
     var [participants, setParticipants] = useState([]);
-    // console.log('P',route.params)
     useEffect(() => {
         if (route.params) {
             setParticipants(route.params);
@@ -21,11 +20,19 @@ export default Participants = ({ navigation, route }) => {
     };
 
     const doneParticipants = () => {
-        console.log(participants);
+        if (participants.length > 0) {
+            navigation.navigate('Hours', {participants})
+        }
+        else {
+            Alert.alert("Error", "Cannot proceed with zero participants.", [
+                {
+                    text: "OK"
+                },
+            ])
+        }
     };
 
     const renderParticipantItem = (participant) => {
-        // console.log(participant.item)
         return (
             <View style={styles.participantListItem}>
                 <TouchableOpacity onPress={() => navigation.navigate('EditParticipant', {
