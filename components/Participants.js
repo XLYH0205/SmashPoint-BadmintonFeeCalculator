@@ -21,7 +21,7 @@ export default Participants = ({ navigation, route }) => {
 
     const doneParticipants = () => {
         if (participants.length > 0) {
-            navigation.navigate('Hours', {participants})
+            navigation.navigate('Hours', { participants })
         }
         else {
             Alert.alert("Error", "Cannot proceed with zero participants.", [
@@ -36,9 +36,9 @@ export default Participants = ({ navigation, route }) => {
         return (
             <View style={styles.participantListItem}>
                 <TouchableOpacity onPress={() => navigation.navigate('EditParticipant', {
-                    participants:participants,
-                    participant:participant.item,
-                    index:participant.index
+                    participants: participants,
+                    participant: participant.item,
+                    index: participant.index
                 })} style={styles.participantListItemTextWrapper}>
                     <Text style={styles.participantListItemText}>{participant.item.name}</Text>
                 </TouchableOpacity>

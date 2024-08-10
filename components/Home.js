@@ -6,7 +6,7 @@ import LogoIconOnly from '../assets/svg/LogoIconOnly';
 export default Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <LogoIconOnly/>
+            <LogoIconOnly />
             <View style={styles.logoWrapper}>
                 <Text style={styles.logoTitle}>SmashPoint</Text>
                 <Text style={styles.logSubtitle}>Badminton Fee Calculator</Text>

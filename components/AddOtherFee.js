@@ -15,22 +15,22 @@ export default AddOtherFee = ({ route, navigation }) => {
     var newFee = {
         id: '',
         name: '',
-        price:0,
+        price: 0,
     }
 
     const doneAddOtherFee = () => {
         if (name !== '' &&
             price !== ''
         ) {
-            newFee.id = otherFees.length+1;
+            newFee.id = otherFees.length + 1;
             newFee.name = name;
             newFee.price = parseFloat(price);
             otherFees = [...otherFees, newFee];
-            if(route.params.source === 'EditParticipant'){
-                navigation.navigate('EditParticipant', { newOtherFees: otherFees, participant: route.params.participant})
+            if (route.params.source === 'EditParticipant') {
+                navigation.navigate('EditParticipant', { newOtherFees: otherFees, participant: route.params.participant })
             }
-            else if(route.params.source === 'AddParticipant'){
-                navigation.navigate('AddParticipant', { newOtherFees: otherFees, participant: route.params.participant})
+            else if (route.params.source === 'AddParticipant') {
+                navigation.navigate('AddParticipant', { newOtherFees: otherFees, participant: route.params.participant })
             }
         }
         else {
@@ -53,7 +53,7 @@ export default AddOtherFee = ({ route, navigation }) => {
                 <View style={styles.sectionWrapper}>
                     <Text style={styles.sectionTitle}>Name</Text>
                     <TextInput
-                        style={[styles.textInput, { borderColor: nameBorderColor  }]}
+                        style={[styles.textInput, { borderColor: nameBorderColor }]}
                         onFocus={() => setNameBorderColor(colors.borderPositive)}
                         onBlur={() => setNameBorderColor(colors.borderDefault)}
                         placeholder='Type the name'
@@ -64,7 +64,7 @@ export default AddOtherFee = ({ route, navigation }) => {
                 <View style={styles.sectionWrapper}>
                     <Text style={styles.sectionTitle}>Price</Text>
                     <TextInput
-                        style={[styles.textInput, { borderColor: priceBorderColor  }]}
+                        style={[styles.textInput, { borderColor: priceBorderColor }]}
                         onFocus={() => setPriceBorderColor(colors.borderPositive)}
                         onBlur={() => setPriceBorderColor(colors.borderDefault)}
                         placeholder='Type the price'

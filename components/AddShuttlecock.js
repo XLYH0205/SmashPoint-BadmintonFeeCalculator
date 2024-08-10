@@ -9,7 +9,7 @@ import colors from '../assets/colors/colors';
 export default AddShuttlecock = ({ route, navigation }) => {
     var shuttlecocks = route.params.shuttlecocks;
     const [nameBorderColor, setNameBorderColor] = useState(colors.borderDefault);
-    const [priceBorderColor, setPriceBorderColor] = useState(colors.borderDefault);    
+    const [priceBorderColor, setPriceBorderColor] = useState(colors.borderDefault);
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [amount, setAmount] = useState(0);
@@ -17,25 +17,25 @@ export default AddShuttlecock = ({ route, navigation }) => {
     var newShuttlecock = {
         id: '',
         name: '',
-        price:0,
-        amount:0
+        price: 0,
+        amount: 0
     }
 
     const doneAddShuttlecock = () => {
         if (name !== '' &&
-            price !== '' && 
+            price !== '' &&
             amount !== 0
         ) {
-            newShuttlecock.id = shuttlecocks.length+1;
+            newShuttlecock.id = shuttlecocks.length + 1;
             newShuttlecock.name = name;
             newShuttlecock.price = parseFloat(price);
             newShuttlecock.amount = amount;
             shuttlecocks = [...shuttlecocks, newShuttlecock];
-            if(route.params.source === 'EditParticipant'){
-                navigation.navigate('EditParticipant', { newShuttlecocks: shuttlecocks, participant: route.params.participant})
+            if (route.params.source === 'EditParticipant') {
+                navigation.navigate('EditParticipant', { newShuttlecocks: shuttlecocks, participant: route.params.participant })
             }
-            else if(route.params.source === 'AddParticipant'){
-                navigation.navigate('AddParticipant', { newShuttlecocks: shuttlecocks, participant: route.params.participant})
+            else if (route.params.source === 'AddParticipant') {
+                navigation.navigate('AddParticipant', { newShuttlecocks: shuttlecocks, participant: route.params.participant })
             }
         }
         else {
@@ -81,7 +81,7 @@ export default AddShuttlecock = ({ route, navigation }) => {
                     <Text style={styles.sectionTitle}>Shuttlecock Amount</Text>
                     <View style={styles.incrementerWrapper}>
                         <TouchableOpacity onPress={() => {
-                            setAmount(amount == 0 ? amount : amount -1)
+                            setAmount(amount == 0 ? amount : amount - 1)
                         }}>
                             <AntDesign name="minuscircle" style={styles.incrementerIcon} />
                         </TouchableOpacity>
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
         color: colors.textPrimary,
     },
     incrementerWrapper: {
-        marginTop:10,
+        marginTop: 10,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'

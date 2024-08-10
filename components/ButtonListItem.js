@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     buttonListItemWrapper: {
         flexDirection: 'row',
         alignItems: 'center',
-        paddingVertical:8
+        paddingVertical: 8
     },
     buttonListItemIconWrapper: {
         backgroundColor: colors.backgroundButton,

@@ -13,10 +13,19 @@ import EditParticipant from './components/EditParticipant';
 import Hours from './components/Hours';
 import AddHour from './components/AddHour';
 import Result from './components/Result';
+import FeeDetail from './components/FeeDetail';
+import SplashScreen from 'react-native-splash-screen';
+import { Platform } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  // SplashScreen.hide();
+  React.useEffect(() => {
+    if(Platform.OS === 'android'){
+      SplashScreen.hide();
+    }
+  },[]);
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -29,7 +38,8 @@ export default function App() {
         <Stack.Screen name="AddOtherFee" component={AddOtherFee} options={{headerShown:false}}/>
         <Stack.Screen name="Hours" component={Hours} options={{headerShown:false}}/>
         <Stack.Screen name="AddHour" component={AddHour} options={{headerShown:false}}/>
-        {/* <Stack.Screen name="Result" component={Result} options={{headerShown:false}}/> */}
+        <Stack.Screen name="Result" component={Result} options={{headerShown:false}}/>
+        <Stack.Screen name="FeeDetail" component={FeeDetail} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, FlatList, TouchableOpacity, Alert } from 'react-native';
 import Header from '../components/Header';
 import colors from '../assets/colors/colors';
 
@@ -16,7 +16,7 @@ export default Participants = ({ navigation, route }) => {
     }, [route.params?.hours]);
 
     const navigateAddHour = () => {
-        navigation.navigate('AddHour', {hours: hours, participants: route.params.participants});
+        navigation.navigate('AddHour', { hours: hours, participants: route.params.participants });
     };
 
     const removeHour = (id) => {
@@ -24,8 +24,16 @@ export default Participants = ({ navigation, route }) => {
     };
 
     const doneHours = () => {
-        console.log('hours', hours);
-        console.log('participants', route.params.participants);
+        if (hours.length > 0) {
+            navigation.navigate('Result', { hours: hours, participants: route.params.participants });
+        }
+        else {
+            Alert.alert("Error", "Cannot proceed with zero hour.", [
+                {
+                    text: "OK"
+                },
+            ])
+        }
     };
 
     const renderHourItem = (hour) => {
@@ -35,7 +43,7 @@ export default Participants = ({ navigation, route }) => {
                     <Text style={styles.hourListItemTime}>{hour.item.time}</Text>
                     <Text style={styles.hourListItemInfo}>Court: {hour.item.court}</Text>
                     <Text style={styles.hourListItemInfo}>Price per court per hour: RM{parseFloat(hour.item.price).toFixed(2)}</Text>
-                    <Text style={styles.hourListItemInfo}>Participants: {hour.item.attendance}</Text>
+                    <Text style={styles.hourListItemInfo}>Participants: {hour.item.attendance.join(', ')}</Text>
                 </View>
                 <TouchableOpacity onPress={() => removeHour(hour.item.id)}>
                     <View style={styles.hourListItemIconWrapper}>
@@ -86,7 +94,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     hourListWrapper: {
-        maxHeight: "55%",
+        maxHeight: "62%",
         marginTop: 8
     },
     hourListItem: {
@@ -100,7 +108,7 @@ const styles = StyleSheet.create({
     hourListItemTextWrapper: {
         flex: 1
     },
-    hourListItemInfo:{
+    hourListItemInfo: {
         fontFamily: 'Poppins-Light',
         fontSize: 12,
         color: colors.textSecondary,

@@ -34,14 +34,14 @@ export default AddParticipant = ({ route, navigation }) => {
 
     const navigateAddShuttlecock = () => {
         navigation.navigate('AddShuttlecock', {
-            source:'AddParticipant',
+            source: 'AddParticipant',
             shuttlecocks: shuttlecocks
         });
     };
-    
+
     const navigateAddOtherFee = () => {
         navigation.navigate('AddOtherFee', {
-            source:'AddParticipant',
+            source: 'AddParticipant',
             otherFees: otherFees
         });
     };

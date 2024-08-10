@@ -16,15 +16,15 @@ export default PasteParticipants = ({ route, navigation }) => {
             const names = lines
                 .filter(line => line.includes('. '))
                 .map(line => line.split('. ')[1]);
-                names.forEach((name) => {
-                    var newParticipant = {
-                        id: name,
-                        name: name,
-                        shuttlecock: [],
-                        otherFee: []
-                    }
-                    participants = [...participants, newParticipant];
-                })
+            names.forEach((name) => {
+                var newParticipant = {
+                    id: name,
+                    name: name,
+                    shuttlecock: [],
+                    otherFee: []
+                }
+                participants = [...participants, newParticipant];
+            })
             navigation.navigate('Participants', participants)
         }
         else {
@@ -50,10 +50,12 @@ export default PasteParticipants = ({ route, navigation }) => {
                     onBlur={() => setBorderColor(colors.borderDefault)}
                     placeholder='Paste in here'
                     placeholderTextColor={colors.textSecondary}
+                    multiline={true}
                     onChangeText={setText}
                 />
                 <View style={styles.infoWrapper}>
-                    <Text style={styles.infoTitle}>You must include number and "."</Text>
+                    <Text style={styles.infoTitle}>1. Text must be multi-line</Text>
+                    <Text style={styles.infoTitle}>2. Text must include number and "."</Text>
                     <Text style={styles.infoTitle}>Example:</Text>
                     <Text style={styles.example}>{"11/8 2-5pm\n1. Peter\n2. Tom\n3. Jack\n4.Jane"}</Text>
                 </View>
