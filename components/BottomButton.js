@@ -14,12 +14,12 @@ const BottomButton = ({ text, onBackPress }) => {
 
 const styles = StyleSheet.create({
     buttonWrapper: {
-        backgroundColor:colors.backgroundPrimary,
-        borderRadius:8,
-        alignItems:'center',
-        justifyContent:'center',
-        paddingVertical:12,
-        marginVertical:32,
+        backgroundColor: colors.backgroundPrimary,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        marginVertical: 32,
     },
     buttonText: {
         fontFamily: 'Poppins-Medium',

@@ -33,7 +33,6 @@ export default AddHour = ({ route, navigation }) => {
         attendance: []
     }
 
-
     const toggleCheckBox = (name) => {
         const newIsChecked = { ...isChecked, [name]: !isChecked[name] };
         setIsChecked(newIsChecked);
@@ -55,10 +54,10 @@ export default AddHour = ({ route, navigation }) => {
             newHour.id = hours.length + 1;
             newHour.time = time;
             newHour.court = court;
-            newHour.price = price;
+            newHour.price = parseFloat(price);
             newHour.attendance = attendance;
             hours = [...hours, newHour];
-            navigation.navigate('Hours', {hours:hours, participants:participants})
+            navigation.navigate('Hours', { hours: hours, participants: participants })
         }
         else {
             Alert.alert("Error", "No input can be empty.", [
@@ -87,7 +86,7 @@ export default AddHour = ({ route, navigation }) => {
                             style={[styles.textInput, { borderColor: nameBorderColor }]}
                             onFocus={() => setNameBorderColor(colors.borderPositive)}
                             onBlur={() => setNameBorderColor(colors.borderDefault)}
-                            placeholder='Type shuttlecock name'
+                            placeholder='Type the time'
                             placeholderTextColor={colors.textSecondary}
                             onChangeText={setTime}
                         />
@@ -98,7 +97,7 @@ export default AddHour = ({ route, navigation }) => {
                             style={[styles.textInput, { borderColor: priceBorderColor }]}
                             onFocus={() => setPriceBorderColor(colors.borderPositive)}
                             onBlur={() => setPriceBorderColor(colors.borderDefault)}
-                            placeholder='Type price of shuttlecock'
+                            placeholder='Type price of court'
                             placeholderTextColor={colors.textSecondary}
                             onChangeText={setPrice}
                         />
