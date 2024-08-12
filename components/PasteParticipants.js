@@ -16,7 +16,6 @@ export default PasteParticipants = ({ route, navigation }) => {
             const names = lines
                 .filter(line => line.includes('.'))
                 .map(line => line.split('.')[1]);
-            console.log(names);
             names.forEach((name) => {
                 var newParticipant = {
                     id: name,
