@@ -135,9 +135,6 @@ export default Participants = ({ navigation, route }) => {
                         showsVerticalScrollIndicator={false}
                     />
                 </View>
-                <View style={styles.msgWrapper}>
-                    <Text style={styles.msgText}>Tips: Kindly use the checkboxes to keep track of who has paid you.</Text>
-                </View>
             </View>
         </View>
     );
@@ -185,19 +182,6 @@ const styles = StyleSheet.create({
     },
     msgWrapper: {
         marginBottom: 16
-    },
-    ListItemTotal: {
-        fontFamily: 'Poppins-Medium',
-        fontSize: 14,
-        color: colors.textNegSecondary,
-    },
-    msgWrapper: {
-        marginTop: 16
-    },
-    msgText: {
-        fontFamily: 'Poppins-Light',
-        fontSize: 12,
-        color: colors.textSecondary,
     },
     msgText: {
         fontFamily: 'Poppins-Light',
