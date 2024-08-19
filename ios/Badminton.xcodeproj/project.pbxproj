@@ -12,12 +12,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		20033189609DBC34B35ACB4F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 78E6456579793EB920B4A8AD /* PrivacyInfo.xcprivacy */; };
+		68F3A3D372F947E386EBC2D6 /* Alatsi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Badminton-BadmintonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Badminton-BadmintonTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		68F3A3D372F947E386EBC2D6 /* Alatsi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */; };
+		8904947F99154FFB8EF20745 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */; };
 		DF2A17B2940748FEA6DB28F1 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2FEBB2835EE4C9FAA56B081 /* Poppins-Light.ttf */; };
 		F11DC350EF004077B3F08403 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDB7065712454264921165D0 /* Poppins-Medium.ttf */; };
-		8904947F99154FFB8EF20745 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +43,18 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Badminton/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Badminton/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Badminton-BadmintonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Badminton-BadmintonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Badminton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badminton.debug.xcconfig"; path = "Target Support Files/Pods-Badminton/Pods-Badminton.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Badminton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badminton.release.xcconfig"; path = "Target Support Files/Pods-Badminton/Pods-Badminton.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Badminton-BadmintonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badminton-BadmintonTests.debug.xcconfig"; path = "Target Support Files/Pods-Badminton-BadmintonTests/Pods-Badminton-BadmintonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Badminton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Badminton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E6456579793EB920B4A8AD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Badminton/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Badminton/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Badminton-BadmintonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Badminton-BadmintonTests.release.xcconfig"; path = "Target Support Files/Pods-Badminton-BadmintonTests/Pods-Badminton-BadmintonTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Alatsi-Regular.ttf"; path = "../assets/fonts/Alatsi-Regular.ttf"; sourceTree = "<group>"; };
+		CDB7065712454264921165D0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		D2FEBB2835EE4C9FAA56B081 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */ = {isa = PBXFileReference; name = "Alatsi-Regular.ttf"; path = "../assets/fonts/Alatsi-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D2FEBB2835EE4C9FAA56B081 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CDB7065712454264921165D0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				78E6456579793EB920B4A8AD /* PrivacyInfo.xcprivacy */,
 			);
 			name = Badminton;
 			sourceTree = "<group>";
@@ -148,6 +151,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B0259108ACA74D17AAA00F19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */,
+				D2FEBB2835EE4C9FAA56B081 /* Poppins-Light.ttf */,
+				CDB7065712454264921165D0 /* Poppins-Medium.ttf */,
+				2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,18 +173,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		B0259108ACA74D17AAA00F19 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				8D09FF11DC804AADACDECCFC /* Alatsi-Regular.ttf */,
-				D2FEBB2835EE4C9FAA56B081 /* Poppins-Light.ttf */,
-				CDB7065712454264921165D0 /* Poppins-Medium.ttf */,
-				2A71125EBEB943F289DEB68A /* Poppins-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -270,6 +273,7 @@
 				DF2A17B2940748FEA6DB28F1 /* Poppins-Light.ttf in Resources */,
 				F11DC350EF004077B3F08403 /* Poppins-Medium.ttf in Resources */,
 				8904947F99154FFB8EF20745 /* Poppins-Regular.ttf in Resources */,
+				20033189609DBC34B35ACB4F /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -569,6 +574,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -588,6 +594,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -607,7 +615,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -615,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -642,6 +657,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -654,6 +670,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -672,7 +690,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

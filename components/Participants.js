@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import colors from '../assets/colors/colors';
 
 import AntDesign from 'react-native-vector-icons/AntDesign';
+AntDesign.loadFont();
+
 import ButtonListItem from './ButtonListItem';
 import BottomButton from './BottomButton';
 
